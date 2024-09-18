@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import lap from '../assets/lap.webp';
 import review from '../assets/video4.avif';
 import action from '../assets/superhro12.jpg';
-import './HomeSec3.css';
+import './Homesec3.css';
 
 function HomeSec3() {
   useEffect(() => {
@@ -22,8 +22,8 @@ function HomeSec3() {
       <div className='home3-content'>
         
         <div className='home3-item' data-aos="fade-up">
-          <img src={lap} alt="Submit Grievance" className='home3-img'/>
-          <h4 className='home3-title'>Submit Your Grievance</h4>
+          <img src={lap} alt="Submit Grievance" className='home3-img '/>
+          <h4 className='home3-title '>Submit Your Grievance</h4>
         </div>
 
         <div className='home3-item' data-aos="fade-up" data-aos-delay="200">

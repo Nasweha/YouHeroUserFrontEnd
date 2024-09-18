@@ -1,18 +1,19 @@
-/* Home.css */
 
-/* General Styling */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  .hero-section, .home-sec2, .home-sec3 {
+  .hero-section, .home-sec2 {
     width: 100%;
     padding: 20px;
   }
+ 
   
-  /* Flexbox for layout adjustments */
+ 
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -21,13 +22,13 @@
     text-align: center;
   }
   
-  /* Responsive Images */
+  
   img {
     max-width: 100%;
     height: auto;
   }
   
-  /* Media Queries for Tablets */
+  
   @media (min-width: 768px) {
     .hero-section {
       flex-direction: row;
@@ -51,7 +52,7 @@
   }
   
   
-  /* Media Queries for Desktops */
+  
   @media (min-width: 1024px) {
     .hero-section {
       padding: 60px;

@@ -38,7 +38,7 @@ function Home() {
       <section className="home-sec2">
         <HomeSec2 />
       </section>
-      <section className="home-sec3">
+      <section className="">
         <HomeSec3 />
       </section>
       <section className="chatbot-section">

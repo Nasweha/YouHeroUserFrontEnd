@@ -1,6 +1,7 @@
 .home3-container {
     padding: 50px 20px;
     animation: fadeIn 1s ease-in-out;
+    margin: 0 60px;
    
     border-radius: 10px; /* Smooth corners */
   }
