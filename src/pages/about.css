@@ -1,0 +1,285 @@
+
+
+.custom-carousel {
+  padding-top: 30px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-top: 30px;
+  }
+  
+  .slide1 {
+    background-image: url('https://cdn.pixabay.com/photo/2020/11/18/08/17/businessman-5754636_1280.png');
+    background-size: cover;
+    background-position: top;
+    height: 480px;
+  }
+  
+  .slide2 {
+    position: relative;
+    height: 480px;
+  }
+  
+  .container-Slide {
+    position: relative;
+    width: 100%;
+    height: 480px; /* Set to match image height */
+  }
+  
+  .image-wrapper2  {
+    position: absolute; 
+    top: 70px;
+    left:0 ;
+    right: 0;
+    width: 700px; /* Image width */
+    height: 600px; /* Image height */
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .text-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 160px;
+    bottom: 0;
+    
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-overlay2 {
+    position: absolute;
+    top: 0;
+    left:190px;
+    right: 0;
+    bottom: 0;
+    
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .para {
+    margin: 10px auto; /* Centers paragraph horizontally */
+    padding: 40px 100px;
+    text-align: center; /* Centers the text */
+  }
+  .back-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;  /* Ensures the heading and paragraph are stacked vertically */
+}
+  .para1 {
+    margin: 20px;
+    padding: 20px;
+    max-width: 800px;
+    color: rgb(0, 0, 0);
+   
+    border-radius: 10px;
+  }
+  
+  .slide2 {
+    position: relative;
+    height: 480px;
+  }
+  
+  .container-Slide2 {
+    position: relative;
+    width: 100%;
+    height: 480px; /* Set to match image height */
+  }
+  
+  .image-wrapper {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 400px; /* Image width */
+    height: 400px; /* Image height */
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .img {
+    width: 800px;
+    height: 300px;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Animations for Heading */
+  h4 {
+    font-size: 1.5rem;
+    color: #ff0000; /* Example color */
+    animation: bounceIn 1.5s ease-in-out;
+  }
+  
+  @keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-carousel {
+      margin-top: 20px;
+    }
+    
+    .image-wrapper, .image-wrapper2 {
+      width: 100%;
+      height: auto;
+      top: auto;
+      right: auto;
+      left: auto;
+      position: static; /* Prevents overlapping */
+    }
+    
+    /* .para {
+      padding: 15px;
+      font-size: 14px;
+    } */
+    
+    h4 {
+      font-size: 1.2rem;
+      
+    }
+    .text-overlay1
+    {
+      padding: 10px;
+      width: 100%;
+      text-align: justify; /* Align text to both sides */
+    }
+    .text-overlay2{
+      padding: 10px;
+      text-align:center;
+      justify-content: center;
+      left: 0;
+
+    }
+  
+    .para {
+      padding: 10px;
+      font-size: 14px;
+      text-align: justify; /* Justify the paragraph text */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-carousel {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .image-wrapper, .image-wrapper2 {
+      width: 100%;
+      height: auto;
+      margin-top: 10px; /* Add some margin between text and image */
+      opacity: 0.5;
+    }
+    
+    /* .para {
+      padding: 10px;
+      font-size: 14px; /* Reduce text size on smaller screens */
+    
+    .text-overlay1
+    {
+      padding: 10px;
+      width: 100%;
+      text-align: justify; /* Align text to both sides */
+    }
+     .text-overlay2{
+      width: 100%;
+      text-align: justify;
+      right: 340px;
+
+      }
+  
+    .para {
+      padding: 10px;
+      font-size: 14px;
+      text-align: justify; /* Justify the paragraph text */
+    }
+    
+    h4 {
+      font-size: 1rem; /* Adjust heading size for small devices */
+      margin-bottom: 15px; /* Add space between heading and image */
+    }
+    
+   
+   
+  }
+
+/* For devices widths 853px and 912px */
+@media (min-width: 853px) and (max-width: 912px) {
+  .container-Slide2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Adjust height to fit content */
+    padding: 10px; /* Add padding if needed */
+  }
+
+  .image-wrapper2 {
+    width: 80%; /* Adjust width */
+    height: auto; /* Adjust height to fit image */
+    margin-bottom: 10px; /* Space between image and text */
+    position: static; /* Remove absolute positioning */
+  }
+
+  .text-overlay2 {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 10px;
+  }
+}
+.container-Slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 10px; /* Add padding if needed */
+}
+
+
+
+.text-overlay1 {
+ 
+  text-align: center;
+ 
+  padding: 10px;
+  right: 160px;
+}

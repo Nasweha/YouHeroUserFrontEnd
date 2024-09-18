@@ -1,0 +1,93 @@
+/* Transparent background with shadow */
+.transparent-navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for proper alignment */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align logo on the left and toggler on the right */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+/* Navbar toggle button styling */
+.navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    margin-left: auto; /* Push the toggle button to the right */
+}
+
+/* Navbar collapse (menu items) styling */
+.navbar-collapse {
+    justify-content: center; /* Center links when expanded */
+}
+
+/* Nav links */
+.nav-link {
+    color: #0e0e0e;
+    padding: 0.6rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 20px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.nav-link1 {
+    color: #fff9f9;
+    padding: 0.6rem 1.5rem;
+    background-color: rgb(199, 44, 44);
+    border-radius: 20px;
+    margin-left: 20px;
+    text-align: center;
+    width: 120px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: rgb(22, 180, 207);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 992px) {
+    .navbar {
+        background-color: rgba(249, 249, 249, 0.7);
+    }
+
+    .navbar-toggler {
+        margin-right: 0; /* Keep the toggler to the right on small screens */
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 0.7rem 2rem;
+        width: 60%;
+        margin: auto;
+        background-color: white;
+    }
+    .nav-link1 {
+        padding: 0.7rem 2rem;
+        width: 60%;
+        margin: auto;
+        background-color: rgb(209, 79, 79);
+    }
+}

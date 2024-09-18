@@ -1,0 +1,66 @@
+/* Home.css */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-section, .home-sec2, .home-sec3 {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Flexbox for layout adjustments */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Responsive Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries for Tablets */
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .home-sec2, .home-sec3 {
+      padding: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .home-sec2, .home-sec3 {
+      padding: 40px;
+    }
+  }
+  
+  
+  /* Media Queries for Desktops */
+  @media (min-width: 1024px) {
+    .hero-section {
+      padding: 60px;
+    }
+  
+    .home-sec2, .home-sec3 {
+      padding: 60px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  

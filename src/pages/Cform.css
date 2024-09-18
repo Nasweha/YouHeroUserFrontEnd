@@ -1,0 +1,172 @@
+/* Ensure the images are responsive and fill the space appropriately */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Adjust image to cover the container while preserving aspect ratio */
+    animation: imageFadeIn 2s ease-in-out;
+}
+
+/* Container for the overlayed form */
+.cform-container {
+    position: relative;
+    margin: 50px 0px;
+}
+
+/* Style for the image with overlay effect */
+.overlay-image {
+    position: relative;
+}
+
+/* Form overlay styling with light-speed-in-right animation */
+.form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width for larger screens */
+    animation: lightSpeedInRight 1.2s ease-in-out;
+}
+
+/* Style for form to ensure it remains visually appealing across devices */
+.form-style {
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, rgb(232, 243, 248) 100%);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for form */
+.form-style:hover {
+    transform: scale(1.02); /* Slightly enlarge the form on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Hover animation for input fields */
+.form-control {
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:hover,
+.form-control:focus {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth transition for the submit button */
+.btn-outline-danger {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Keyframes for image fade-in animation */
+@keyframes imageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for light speed in right animation */
+@keyframes lightSpeedInRight {
+    0% {
+        transform: translateX(100%) skewX(30deg);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(0) skewX(-10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0) skewX(5deg);
+    }
+    100% {
+        transform: translateX(0) skewX(0);
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 481px) {
+    .form-overlay {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-style {
+       
+    }
+
+    .cform-container {
+        height: 100vh;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 912px) {
+    .form-overlay {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-style {
+        background-color: aliceblue;
+        margin-top: 0px;
+    }
+
+    .cform-container {
+        height: 60vh;
+      
+       margin-top: 60px;
+       margin-bottom: 50px;
+       
+    }
+
+    .responsive-image {
+        top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-overlay {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-style {
+        
+        margin-top: 70px;
+        background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, rgb(232, 243, 248) 100%);
+       
+    }
+
+    .cform-container {
+        height: 80vh;
+        margin-right: 20px;
+        
+        margin-bottom: 30px;
+       
+    }
+}
+@media (width: 540px) {
+    .form-overlay {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-style {
+        
+        margin-top: 370px;
+        background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.9) 0%, rgb(180, 222, 241) 100%);
+        margin-bottom: 90px;
+       
+    }
+
+    .cform-container {
+        height: 100vh;
+        margin-right: 20px;
+        
+        margin-bottom: 50px;
+       
+    }
+}
